@@ -1,12 +1,30 @@
+import { ConteneurNav } from "./compenante/ConteneurNav"
+import Header from "./compenante/header/Header"
+import Trends from "./compenante/trends/Trends"
+
 
 
 function App() {
 
 
   return (
-    <>
-      <p className="text-2xl text-red-500 font-bold">hello</p>
-    </>
+    <div className="bg-slate-900 py-3 ">
+
+   <main className="  w-full max-w-360 mx-auto  flex flex-col gap-8 ">
+      <nav>
+        <ConteneurNav />
+      </nav>
+      <header>
+        <Header />
+      </header>
+      <div>
+        <Trends />
+      </div>
+  </main>
+    </div>
+
+
+
   )
 }
 
